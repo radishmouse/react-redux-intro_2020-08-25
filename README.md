@@ -40,8 +40,10 @@ yarn add redux react-redux
 
 - import your Dumb Component
 - import the connect function from react-redux
-- write a mapStateToProps
+- if we need state data: write a mapStateToProps
     - it should "translate" redux state into react props
+- if we need to trigger an action: write a mapDispatchToProps
+    - it should "translate" redux dispatch into react props
 - you "wire up" your dumb component to the mapStateToProps fn
 
 

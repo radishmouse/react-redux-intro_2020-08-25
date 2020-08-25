@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import CounterApp from './components/CounterApp';
+import CounterApp from './CounterApp';
 
 import { Provider } from 'react-redux';
 import { store } from './store';

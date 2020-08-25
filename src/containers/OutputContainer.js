@@ -14,4 +14,4 @@ function mapStateToProps(state) {
 // const IronManSuit = connect(mapStateToProps);
 // export default IronManSuit(Output);
 // This is what fluent Redux devs write:
-export default connect(mapStateToProps)(Output);
+export default connect(mapStateToProps, null)(Output);
