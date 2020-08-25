@@ -2,6 +2,8 @@ import React from 'react';
 import Output from './containers/OutputContainer';
 // import Increment from './components/Increment';
 import Increment from './containers/IncrementContainer';
+import Decrement from './containers/DecrementContainer';
+
 
 const CounterApp = props => (
     <div>
@@ -11,8 +13,8 @@ const CounterApp = props => (
         {/* Increment button */}
         <Increment />
         {/* Decrement button */}
+        <Decrement />
     </div>
 );
-
 
 export default CounterApp;
