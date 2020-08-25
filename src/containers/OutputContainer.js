@@ -1,7 +1,21 @@
 import Output from '../components/Output';
 import { connect } from 'react-redux';
 
-function mapStateToProps(state) {
+const ConfigurableOutputContainer = (whichAccount) => {
+    const mapStateToProps = state => {
+        // To "translate" we use something
+        // like a Dictionary.
+        // In JS, that's an Object!!!!
+        return {
+            // propName seen by React : value-in-state
+            amount: state[whichAccount]
+        }
+    }
+
+    return connect(mapStateToProps, null)(Output);
+}
+
+const mapStateToProps = state => {
     // To "translate" we use something
     // like a Dictionary.
     // In JS, that's an Object!!!!
@@ -10,8 +24,12 @@ function mapStateToProps(state) {
         amount: state.checking
     }
 }
+// let c = connect;
+// let comp = connect(mapStateToProps, null)(Output);
+// console.log(Output);
+// console.log(Output({amount: 5}));
+// console.log(c);
+// console.log(comp);
+// console.log(ConfigurableOutputContainer);
 
-// const IronManSuit = connect(mapStateToProps);
-// export default IronManSuit(Output);
-// This is what fluent Redux devs write:
-export default connect(mapStateToProps, null)(Output);
+export default ConfigurableOutputContainer;
