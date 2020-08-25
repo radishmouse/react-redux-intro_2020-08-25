@@ -36,7 +36,7 @@ yarn add redux react-redux
     - it should expect to receive `dispatch()` as an argument
 
 
-### To create a Smart Container v1:
+### To create a Smart Container:
 
 - import your Dumb Component
 - import the connect function from react-redux
