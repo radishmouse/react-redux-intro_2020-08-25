@@ -35,6 +35,17 @@ yarn add redux react-redux
 - Redux dispatch is provided via "mapDispatchToProps"
     - it should expect to receive `dispatch()` as an argument
 
+
+### To create a Smart Container v1:
+
+- import your Dumb Component
+- import the connect function from react-redux
+- write a mapStateToProps
+    - it should "translate" redux state into react props
+- you "wire up" your dumb component to the mapStateToProps fn
+
+
+
 ## Adding a `<Provider />`
 
 - pass it a `store` prop that points to your Redux store
